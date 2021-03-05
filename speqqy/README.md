@@ -23,7 +23,7 @@ Use at your own risk.
 
 `npm install speqqy`
 
-## Usage
+## Commands
 
 `speqqy <command>`
 
@@ -34,6 +34,10 @@ Use at your own risk.
 | `speqqy -c --compile` | Resolve all imports and generate `.def.speq` definitions |
 | `speqqy -l --lint` | Lint / validate a SPEQ file |
 | `speeqy -v --version` | Display current version of `speqqy` |
+
+## Usage
+
+Refer to `npm` or execute `speqqy -h` for detailed usage instructions.
 
 
 
