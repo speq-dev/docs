@@ -1,12 +1,8 @@
-# Speqqy
+---
+description: A command-line utility to manage and integrate SPEQ-based workflows
+---
 
-{% hint style="warning" %}
-Speqqy is currently in draft development.  
-  
-Features will likely be incomplete or missing.  
-  
-Use at your own risk.
-{% endhint %}
+# Speqqy
 
 Speqqy is a TypeScript-based command line utility with plans to support:
 
@@ -16,6 +12,12 @@ Speqqy is a TypeScript-based command line utility with plans to support:
 * Rules Validation
 * Documentation Generation
 * Definition Conversion \(e.g. OpenAPI -&gt; SPEQ\)
+
+{% hint style="warning" %}
+Speqqy is currently in draft development. Features will likely be incomplete or missing.  
+  
+Use at your own risk.
+{% endhint %}
 
 ## Installation
 
