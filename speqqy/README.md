@@ -1,10 +1,10 @@
 ---
-description: A command-line utility to manage and integrate SPEQ-based workflows
+description: A utility to manage and integrate SPEQ-based workflows
 ---
 
 # Speqqy
 
-Speqqy is a TypeScript-based command line utility with plans to support:
+Speqqy is a TypeScript-based utility with plans to support:
 
 * Generation of a scaffold
 * Compilation
