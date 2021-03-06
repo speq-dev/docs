@@ -2,13 +2,13 @@
 description: The 'universal spec' has arrived
 ---
 
-# What is SPEQ?
+# Why SPEQ?
 
 **SPEQ** is a definition to describe APIs, services and databases in a **protocol-agnostic** manner. 
 
-That means SPEQ can act as the defacto definition for REST, GraphQL, Kafka, gRPC, SQL and any other service that follows a client-server model within your organization or team.
+That means SPEQ can act as your defacto definition for REST, GraphQL, Kafka, gRPC, SQL and any other service that follows a client-server model within your organization or team.
 
-SPEQ is backed by a terminal utility, [**Speqqy**](https://www.npmjs.com/package/speqqy) with plans to support: 
+SPEQ is backed by the [**Speqqy**](https://www.npmjs.com/package/speqqy) ****utility with plans to support: 
 
 * Generation of SPEQ Starter
 * Compilation
@@ -30,7 +30,9 @@ SPEQ is currently under active development of its first draft version is subject
 It is recommended to avoid use in production environments.
 {% endhint %}
 
-## The 
+## The Big Picture
+
+### SPEQ Basics
 
 <table>
   <thead>
@@ -42,33 +44,38 @@ It is recommended to avoid use in production environments.
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">SPEQ</td>
+      <td style="text-align:left">Definition</td>
       <td style="text-align:left">
         <p><b>Required</b>
         </p>
         <p>Describes servers, versions, development stages, governance rules, resources,
           operations and message/metadata schemas for one or more services.</p>
+        <p></p>
+        <p>Can be split and organized how a team wishes.</p>
       </td>
-      <td style="text-align:left"><code>*.speq</code>
+      <td style="text-align:left"><code>*.def.speq</code>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">Definition</td>
+      <td style="text-align:left">Package</td>
       <td style="text-align:left">
-        <p><b>Auto-Generated</b>
+        <p><b>Auto-Generated | Read-Only</b>
         </p>
-        <p>When a SPEQ is compiled, all references are resolved, external schemas
-          and specifications are converted, rules will be validated and one definition
-          will be generated for each service and it&apos;s associated stages and
-          versions, preventing exposure of internal services and descriptions.</p>
+        <p>When a <code>.def.speq</code> is compiled with <code>speqqy</code>, all references
+          are resolved, external schemas and specifications are converted, rules
+          will be validated and by default one definition will be generated for each
+          service and it&apos;s associated stages and versions, preventing exposure
+          of internal services and descriptions.</p>
+        <p></p>
+        <p>Future support includes custom package</p>
       </td>
-      <td style="text-align:left"><code>{service}-{stage}-{version}.def.speq</code>
+      <td style="text-align:left"><code>{service}-{stage}-{version}.pkg.speq</code>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">Change Log</td>
       <td style="text-align:left">
-        <p><b>Auto-Generated</b>
+        <p><b>Auto-Generated | Read-Only</b>
         </p>
         <p>An auto-generated list of changes, generated at compile time between the
           previous SPEQ and the current. Useful for generating release notes.</p>
@@ -76,60 +83,28 @@ It is recommended to avoid use in production environments.
       <td style="text-align:left"><code>*.changelog.speq</code>
       </td>
     </tr>
-    <tr>
-      <td style="text-align:left">Sample</td>
-      <td style="text-align:left">Describes a sample payload (message &amp; metadata) that conforms to a
-        SPEQ definition (and can represent a server message for virtualization!)</td>
-      <td
-      style="text-align:left"><code>*.sample.speq</code>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Tests</td>
-      <td style="text-align:left">Describe one or more service functional, end-to-end or contract tests,
-        referencing SPEQs that can be used by vendors and tooling to automate testing.</td>
-      <td
-      style="text-align:left"><code>*.tests.speq</code>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Virts</td>
-      <td style="text-align:left">Describe virtualized service configuration, that can be used by vendors
-        and tooling to stand up a virtualized instance of your services.</td>
-      <td
-      style="text-align:left"><code>*.virts.speq</code>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Props</td>
-      <td style="text-align:left">A collection of freeform data objects that can be referenced in SPEQ tests,
-        virts and scenarios.</td>
-      <td style="text-align:left"><code>*.props.speq</code>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Protocol</td>
-      <td style="text-align:left">A SPEQ that describes the unique properties of a service or API.
-        <br />
-        <br />For example:
-        <br />
-        <br />Should it support client streaming?
-        <br />What metadata does it support?
-        <br />Does the API require serialization and deserialization?
-        <br />
-        <br />A set of default proto SPEQs are defined (e.g. for REST, GraphQL, gRPC,
-        Kafka), but custom protocols can be defined at any time, but should be
-        prefixed with <code>x-</code>
-      </td>
-      <td style="text-align:left"><code>*.proto.speq</code>
-      </td>
-    </tr>
   </tbody>
 </table>
 
+### SPEQ Advanced
+
+Once you have your services defined within SPEQ, you may want to start adding examples, creating tests, virtualizing services and more. SPEQ provides a number
+
+|  |  |  |
+| :--- | :--- | :--- |
+| Payload | Describes a sample payload \(message & metadata\) that conforms to a SPEQ definition. | `*.payload.speq` |
+| Tests | Describe one or more service functional, end-to-end or contract tests, referencing SPEQs that can be used by vendors and tooling to automate testing. | `*.tests.speq` |
+| Virts | Describe virtualized service configuration, that can be used by vendors and tooling to stand up a virtualized instance of your services. | `*.virts.speq` |
+| Props | A collection of freeform data objects that can be referenced in SPEQ tests, virts and scenarios. | `*.props.speq` |
+| Protocol | A SPEQ that describes the unique properties of a service or API.   For example:  Should it support client streaming?  What metadata does it support?  Does the API require serialization and deserialization?   A set of default proto SPEQs are defined \(e.g. for REST, GraphQL, gRPC, Kafka\), but custom protocols can be defined at any time, but should be prefixed with `x-` | `*.proto.speq` |
+
 ## What about edge cases?
 
+Every API, database and service has unique implementations, but what makes SPEQ unique is that it's built around an architecture that is protocol-agnostic:
 
+![agnostic-architecture](https://i.imgur.com/JVYo97T.png)
+
+With this base implementation, the key metadata documenting the API is consistent and rules can be put in place for protocol-specific logic or even organization-specific logic with custom extensions.
 
 ## What about other definitions?
 
