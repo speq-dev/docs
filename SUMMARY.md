@@ -9,26 +9,32 @@
 
 ## .def.speq <a id="definition"></a>
 
-* [metadata](definition/metadata.md)
-* [import](definition/import.md)
-* [stages](definition/stages.md)
-* [services](definition/services.md)
-* [resources](definition/resources.md)
-* [models](definition/models.md)
+* [Purpose](definition/purpose.md)
+* [Properties](definition/properties/README.md)
+  * [import](definition/properties/import.md)
+  * [services](definition/properties/services.md)
+  * [stages](definition/properties/stages.md)
+  * [resources](definition/properties/resources.md)
+  * [models](definition/properties/models.md)
+  * [metadata](definition/properties/metadata.md)
 
-## .pkg.speq
+## .pkg.speq \(Read-only\) <a id=".pkg.speq"></a>
 
-* [Coming Soon](.pkg.speq/coming-soon.md)
+* [Purpose](.pkg.speq/purpose.md)
+* [Properties](.pkg.speq/coming-soon.md)
 
-## .changelog.speq <a id="changelog"></a>
+## .changelog.speq \(read-only\) <a id="changelog"></a>
 
-* [Coming Soon](changelog/coming-soon.md)
+* [Purpose](changelog/purpose.md)
+* [Properties](changelog/coming-soon.md)
 
 ## .test.speq <a id="tests"></a>
 
-* [Coming Soon](tests/coming-soon.md)
+* [Purpose](tests/purpose.md)
+* [Properties](tests/coming-soon.md)
 
 ## .virt.speq <a id="virtualization"></a>
 
-* [Coming Soon](virtualization/coming-soon.md)
+* [Purpose](virtualization/purpose.md)
+* [Properties](virtualization/coming-soon.md)
 
