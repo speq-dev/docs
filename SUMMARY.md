@@ -7,17 +7,17 @@
     * [npm](https://www.npmjs.com/package/speqqy)
 * [Formatting](formatting.md)
 
-## .def.speq <a id="definition"></a>
+## .def.speq
 
-* [Description](definition/description.md)
-* [Example](definition/example.md)
-* [Properties](definition/properties/README.md)
-  * [metadata](definition/properties/metadata.md)
-  * [import](definition/properties/import.md)
-  * [services](definition/properties/services.md)
-  * [stages](definition/properties/stages.md)
-  * [resources](definition/properties/resources.md)
-  * [models](definition/properties/models.md)
+* [Description](.def.speq/description.md)
+* [Example](.def.speq/example.md)
+* [Properties](.def.speq/properties/README.md)
+  * [metadata](.def.speq/properties/metadata.md)
+  * [import](.def.speq/properties/import.md)
+  * [services](.def.speq/properties/services.md)
+  * [stages](.def.speq/properties/stages.md)
+  * [resources](.def.speq/properties/resources.md)
+  * [models](.def.speq/properties/models.md)
 
 ## .pkg.speq \(Read-only\) <a id=".pkg.speq"></a>
 
@@ -25,20 +25,24 @@
 * [Example](.pkg.speq/example.md)
 * [Properties](.pkg.speq/coming-soon.md)
 
-## .changelog.speq \(read-only\) <a id="changelog"></a>
+## .changelog.speq \(read-only\) <a id=".changelog.speq"></a>
 
-* [Description](changelog/description.md)
-* [Example](changelog/example.md)
+* [Description](.changelog.speq/description.md)
+* [Example](.changelog.speq/example.md)
 
-## .test.speq <a id="tests"></a>
+## .test.speq
 
-* [Description](tests/description.md)
-* [Example](tests/example.md)
-* [Properties](tests/coming-soon.md)
+* [Description](.test.speq/description.md)
+* [Example](.test.speq/example.md)
+* [Properties](.test.speq/coming-soon.md)
 
-## .virt.speq <a id="virtualization"></a>
+## .virt.speq
 
-* [Description](virtualization/description.md)
-* [Example](virtualization/example.md)
-* [Properties](virtualization/coming-soon.md)
+* [Description](.virt.speq/description.md)
+* [Example](.virt.speq/example.md)
+* [Properties](.virt.speq/coming-soon.md)
+
+## .proto.speq
+
+* [Untitled](.proto.speq/untitled.md)
 

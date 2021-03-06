@@ -14,12 +14,11 @@ The custom `.speq` extension enables improvements like intellisense and custom s
 YAML-specific features like multiple documents in a single file and templating are not supported.
 {% endhint %}
 
-## Special Variables
+## Special Properties
 
-|  |  |
+| Property | Description |
 | :--- | :--- |
-| `$import` | Refers |
+| `$import` |  |
 | `$extend` |  |
 | `$ref` |  |
-|  |  |
 
