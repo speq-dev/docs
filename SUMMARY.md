@@ -7,17 +7,18 @@
     * [npm](https://www.npmjs.com/package/speqqy)
 * [Formatting](formatting.md)
 
-## .def.speq
+## .speq
 
-* [Description](.def.speq/description.md)
-* [Example](.def.speq/example.md)
-* [Properties](.def.speq/properties/README.md)
-  * [metadata](.def.speq/properties/metadata.md)
-  * [import](.def.speq/properties/import.md)
-  * [services](.def.speq/properties/services.md)
-  * [stages](.def.speq/properties/stages.md)
-  * [resources](.def.speq/properties/resources.md)
-  * [models](.def.speq/properties/models.md)
+* [Description](.speq/description.md)
+* [Example](.speq/example.md)
+* [Properties](.speq/properties/README.md)
+  * [metadata](.speq/properties/metadata.md)
+  * [import](.speq/properties/import.md)
+  * [services](.speq/properties/services.md)
+  * [stages](.speq/properties/stages.md)
+  * [resources](.speq/properties/resources.md)
+  * [rules](.speq/properties/rules.md)
+  * [models](.speq/properties/models.md)
 
 ## .pkg.speq \(Read-only\) <a id=".pkg.speq"></a>
 

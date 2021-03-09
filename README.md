@@ -53,7 +53,7 @@ It is recommended to avoid use in production environments.
         <p></p>
         <p>Can be split and organized how a team wishes.</p>
       </td>
-      <td style="text-align:left"><code>*.def.speq</code>
+      <td style="text-align:left"><code>*.speq</code>
       </td>
     </tr>
     <tr>
